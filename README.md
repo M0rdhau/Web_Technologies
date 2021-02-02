@@ -1,4 +1,8 @@
-## Labs for Web Technologies - ICD0007
+## Labs Number 1
 
-Labs are going to be organized in their own branches
-ICD0007_LAB\[lab_number]
+https://moodle.taltech.ee/pluginfile.php/228709/mod_resource/content/5/LAB1.pdf
+
+3 pages:
+* index.html
+* winners.html
+* conditions.html

@@ -1,0 +1,143 @@
+@import "main.css";
+
+
+
+h1, h2 {
+    color: black;
+    text-shadow: 2px 2px #717b7c;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+article {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: url("../img/aliens.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed;
+    background-color: #9F7061;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 150px;
+    background-color: rgba(118, 77, 64, 0.3);
+
+}
+
+nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 600px;
+    top: 120px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    background-color: #64645a;
+    overflow: auto;
+    border-radius: 3px;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+nav li {
+    float: left;
+    padding: 2px;
+    margin-right: 10px;
+    margin-left: 4px;
+    height: 25px;
+    background-color: #777d7d;
+    border-radius: 5px;
+}
+
+.menu a:link {
+    text-decoration: none;
+}
+
+.menu a{
+    color: #fefefe;
+}
+
+.menu:hover{
+    background-color: #603c30;
+}
+.menu:hover a{
+    color:black;
+}
+#flight-statuses {
+    width: 600px;
+    align-self: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+#flight-statuses td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#flight-statuses tr{
+    height: 40px;
+}
+
+#flight-statuses tr:nth-child(2n + 1){
+    background-color: white;
+}
+
+#flight-statuses tr:nth-child(2n){
+    background-color: lightgray;
+}
+
+#flight-statuses th{
+    background-color: red;
+    color: white;
+}
+
+#flight-statuses tr:hover{
+    background-color: #9F7061;
+}
+
+.cancelled {
+    font-weight: bold;
+    color: red;
+}
+
+.departed {
+    color: green;
+    font-weight: bold;
+}
+
+.departed:after{
+    content: '\2708'
+}
+
+
+@media only print {
+    body{
+        background-image: none;
+        background-color: #ffffff;
+        color:black;
+    }
+
+    header{
+        display: none;
+    }
+}

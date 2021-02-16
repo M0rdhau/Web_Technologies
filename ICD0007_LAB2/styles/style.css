@@ -115,14 +115,16 @@ nav li {
     background-color: #9F7061;
 }
 
-.cancelled {
-    font-weight: bold;
-    color: red;
-}
+@media only screen{
+    .cancelled {
+        font-weight: bold;
+        color: red;
+    }
 
-.departed {
-    color: green;
-    font-weight: bold;
+    .departed {
+        color: green;
+        font-weight: bold;
+    }
 }
 
 .departed:after{

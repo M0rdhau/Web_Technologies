@@ -15,6 +15,10 @@
 
   function countLines($filename)
   {
+    if(!file_exists($filename)){
+      echo "<h1> error - File not found </h1>";
+      return;
+    }
     $handle = fopen($filename, "r");
     $numLines = 0;
     while(!feof($handle))
@@ -25,13 +29,19 @@
     return $numLines;
   }
 
+
   function countNonWhitespace($filename)
   {
+    if(!file_exists($filename)){
+      echo "<h1> error - File not found </h1>";
+      return;
+    }
     $handle = fopen($filename, "r");
     $numChars = 0;
     while(!feof($handle))
     {
-      if(!ctype_space(fgetc($handle)))
+      $currchar = fgetc($handle);
+      if(!ctype_space($currchar) && ord($currchar) !== 0)
       {
         $numChars++;
       }
@@ -40,6 +50,10 @@
   }
 
   function phonicsCount($filename){
+    if(!file_exists($filename)){
+      echo "<h1> error - File not found </h1>";
+      return;
+    }
     global $vowels;
     $handle = fopen($filename, "r");
     $numVowels = ["A" => 0, "E" => 0, "I" => 0, "O" => 0, "U" => 0];
@@ -54,6 +68,21 @@
     return $numVowels;
   }
 
+  function charPerLine($filename)
+  {
+    if(!file_exists($filename)){
+      echo "<h1> error - File not found </h1>";
+      return;
+    }
+    $handle = fopen($filename, "r");
+    print("chars per line: " . "\n");
+    while(!feof($handle))
+    {
+      echo ord(fgetc($handle)) . "\n";
+    }
+  }
+  
+  charPerLine($file);
   echo "Number of Vowels: " . "\n";
   print_r(phonicsCount($file));
   echo "Number of Non-Whitespace Characters: " . countNonWhitespace($file) . "\n";

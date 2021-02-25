@@ -42,13 +42,6 @@ for($i = 0; $i < $numOfDistances; $i++)
 
 print_r($arrDistances);
 
-// I added 30 several times just so you could test in case you don't get two 
-// identical keys
-array_push($arrDistances, 30);
-array_push($arrDistances, 30);
-array_push($arrDistances, 30);
-array_push($arrDistances, 30);
-array_push($arrDistances, 30);
 
 sort($arrDistances, SORT_REGULAR);
 print_r($arrDistances);

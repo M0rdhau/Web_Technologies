@@ -41,6 +41,7 @@
     while(!feof($handle))
     {
       $currchar = fgetc($handle);
+      //can also be ord($currchar) > 40 && ord($currchar) < 177
       if(!ctype_space($currchar) && ord($currchar) !== 0)
       {
         $numChars++;
@@ -68,21 +69,7 @@
     return $numVowels;
   }
 
-  function charPerLine($filename)
-  {
-    if(!file_exists($filename)){
-      echo "<h1> error - File not found </h1>";
-      return;
-    }
-    $handle = fopen($filename, "r");
-    print("chars per line: " . "\n");
-    while(!feof($handle))
-    {
-      echo ord(fgetc($handle)) . "\n";
-    }
-  }
-  
-  charPerLine($file);
+
   echo "Number of Vowels: " . "\n";
   print_r(phonicsCount($file));
   echo "Number of Non-Whitespace Characters: " . countNonWhitespace($file) . "\n";

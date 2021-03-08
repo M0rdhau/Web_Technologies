@@ -22,7 +22,7 @@ $dataTransferred = 0;
 $unicodePattern = "/^([A-Za-z]|[\u00c0-\uffff])+$/";
 $salutePattern = "/^(Mr.|Mrs.|Prof.|Dr.|Mrs.|Sir)$/";
 $datePattern = "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/";
-$emailPattern = "/^[\u0021-\u007a]+@[a-z]+\.[a-z]+$/";
+$emailPattern = "/^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+$/";
 $phonePattern = "/^[0-9]{8}$/";
 
 if ($_POST && isset(
@@ -61,5 +61,6 @@ if ($_POST && isset(
   } else {
     $dataTransferred = 2;
   }
+  file_put_contents("errorlog", $arrivalstring, FILE_APPEND);
 }
 ?>

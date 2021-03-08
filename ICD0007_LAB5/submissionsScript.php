@@ -5,7 +5,7 @@ require_once("functions.php");
 function checkAge($str)
 {
   $intvalue = intval($str);
-  if ($intvalue === 0 || $intvalue < 21) {
+  if ($intvalue === 0 || $intvalue < 17) {
     return false;
   }
   return $intvalue;

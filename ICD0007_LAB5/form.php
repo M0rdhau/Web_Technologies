@@ -11,7 +11,7 @@
 				<option value="Mrs.">Mrs.</option>
 			</select><br>
 			<label for="firstename">First Name: </label><br>
-			<input id="firstname" type="text" name="firstname" placeholder="First Name" size="12" required><br>
+			<input id="firstname" type="text" name="firstname" placeholder="First Name" size="12" required ><br>
 			<label for="middlename">Middle Name: </label><br>
 			<input id="middlename" type="text" name="middlename" placeholder="Middle Name" size="12"><br>
 			<label for="lastname">Last Name: </label><br>

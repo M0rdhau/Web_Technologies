@@ -19,7 +19,7 @@ function simplecheck($str, $pat, $notempty)
   return false;
 }
 $dataTransferred = 0;
-$unicodePattern = "/^([A-Za-z]|[\u00c0-\uffff]){3,}$/";
+$unicodePattern = "/^([A-Za-z]|[\u00c0-\uffff])+$/";
 $salutePattern = "/^(Mr.|Mrs.|Prof.|Dr.|Mrs.|Sir)$/";
 $datePattern = "/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/";
 $emailPattern = "/^[\u0021-\u007a]+@[a-z]+\.[a-z]+$/";

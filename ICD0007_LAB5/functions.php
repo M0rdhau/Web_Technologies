@@ -1,17 +1,26 @@
 <?php
 const ARRIVAL_FILE = "data/arrivals.dfile";
 
-function showData()
+function showData($toDisplayArray)
 {
-  $toDisplayArray = readData();
   echo "<table id=\"infoTable\">";
+  echo"<tr>";
+  echo "<th>Salutation</th>";
+  echo "<th>First Name</th>";
+  echo "<th>Middle Name</th>";
+  echo "<th>Last Name</th>";
+  echo "<th>Age</th>";
+  echo "<th>Email</th>";
+  echo "<th>Phone</th>";
+  echo "<th>Arrival</th>";
+  echo "</tr>";
+  echo"<tr>";
   foreach ($toDisplayArray as $datlet) {
-    echo"<tr>";
-    foreach($datlet as $elem){
-      echo "<td>{$elem}</td>";
-    }
-    echo "</tr>";
+    // foreach($datlet as $elem){
+      echo "<td>{$datlet}</td>";
+    // }
   }
+  echo "</tr>";
   "</table>";
 }
 
@@ -52,4 +61,3 @@ function readData()
     return $arrivalArray;
   }
 }
-?>

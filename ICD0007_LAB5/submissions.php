@@ -14,8 +14,8 @@ require_once("functions.php")
 </head>
 <body>
   <header>
-    <a href="/index.php">Home</a>
-    <a href="/submissions.php">To Submissions</a>
+    <a href="index.php">Home</a>
+    <a href="submissions.php">To Submissions</a>
   </header>
   <h1>Number of submissions: <?php echo countLines(ARRIVAL_FILE) ?></h1>
   <form method="get" target="_self" action="submissionsdownload.php">

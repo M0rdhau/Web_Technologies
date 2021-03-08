@@ -15,8 +15,8 @@ require_once("functions.php");
 </head>
 <body>
 	<header>
-		<a href="/index.php">Home</a>
-		<a href="/submissions.php">To Submissions</a>
+		<a href="index.php">Home</a>
+		<a href="submissions.php">To Submissions</a>
 	</header>
 	<div>
 		<?php

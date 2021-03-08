@@ -61,6 +61,5 @@ if ($_POST && isset(
   } else {
     $dataTransferred = 2;
   }
-  file_put_contents("errorlog", $arrivalstring, FILE_APPEND);
 }
 ?>

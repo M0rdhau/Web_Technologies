@@ -12,14 +12,12 @@ require_once("submissionsScript.php")
 	<title>LAB05 - PHP form handling</title>
 
 <body>
+	<header>
+		<a href="/submissions.php" >To Submissions</a>
+	</header>
 	<div>
 		<?php
 		require_once("form.html");
-		?>
-	</div>
-	<div>
-		<?php
-		showData();
 		?>
 	</div>
 </body>

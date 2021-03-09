@@ -18,6 +18,19 @@ function simplecheck($str, $pat, $notempty)
   }
   return false;
 }
+
+function checkArrivalDate($datestr){
+  global $datePattern;
+  $datestr = simplecheck($datestr, $datePattern, false);
+  if($datestr !== false){
+    $year = intval(substr($datestr, 0, 4));
+    $month = intval(substr($datestr, 5, 2));
+    $day = intval(substr($datestr, 8, 2));
+    if(!checkdate($month, $day, $year)){ return false; }
+  }
+  return $datestr;
+}
+
 $dataTransferred = 0;
 $unicodePattern = "/^[^@ \t\r\n0-9]+$/";
 $salutePattern = "/^(Mr.|Mrs.|Prof.|Dr.|Mrs.|Sir)$/";
@@ -42,7 +55,7 @@ if ($_POST && isset(
   $lastname = simplecheck($_POST['lastname'], $unicodePattern, false);
   $age = checkAge($_POST['age']);
   $email = simplecheck($_POST['email'], $emailPattern, false);
-  $arrival = simplecheck($_POST['arrival'], $datePattern, false);
+  $arrival = checkArrivalDate($_POST['arrival']);
   $arrivalstring = $salutation . "|" . $firstname . "|"
     . $middlename . "|" . $lastname . "|" . $age . "|"
     . $email . "|" .  $phone . "|" . $arrival . "|\n";

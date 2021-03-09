@@ -14,7 +14,7 @@ function checkAge($str)
 function simplecheck($str, $pat, $notempty)
 {
   if (preg_match($pat, $str) || ($notempty && $str === "")) {
-    return $str;
+    return str_replace("|", "_", $str);
   }
   return false;
 }

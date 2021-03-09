@@ -23,8 +23,8 @@
 			<label for="phone">Phone: </label><br>
 			<input id="phone" type="tel" name="phone" pattern="[0-9]{4}[0-9]{4}" size="24" placeholder="12345678"><br>
 			<label for="arrival">Arrival Date: </label><br>
-			<input id="arrival" name="arrival" type="date" min=<?php echo date('Y-m-d');?> 
-				max=<?php echo date('Y-m-d', time() + (30*24*60*60));?>><br>
+			<input id="arrival" name="arrival" type="date" min="<?php echo date('Y-m-d');?>"
+				max="<?php echo date('Y-m-d', time() + (30*24*60*60));?>"><br>
 			<input type="submit" value="Submit">
 		</form>
 	</div>

@@ -3,7 +3,7 @@ require_once("functions.php");
 if (file_exists(ARRIVAL_FILE)) {
   header('Content-Description: File Transfer');
   header('Content-Type: application/octet-stream');
-  header('Content-Disposition: attachment; filename="' . basename(ARRIVAL_FILE) . '"');
+  header('Content-Disposition: attachment; filename="data.psv"');
   header('Expires: 0');
   header('Cache-Control: no-cache, must-revalidate');
   header('Pragma: public');

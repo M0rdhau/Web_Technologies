@@ -1,0 +1,557 @@
+I002;Introduction to Information Processing;3,50;autumn
+I003;Macroeconomics;3,50;autumn - spring 
+I004;Risks and Safety;0,00;autumn
+I005;Philosophy;3,50;autumn - spring 
+I007;Business Communication and Communication Psychology;3,50;autumn - spring 
+I010;Study Setup and Introduction to IT Systems Analysis;1,50;spring 
+I011;English;5,00;spring 
+I013;Study Setup and Introduction to Technical Communication Specialism;1,50;autumn - spring 
+I022;Study Setup and Introduction to Technical Communication Specialism;2,00;spring 
+I025;Basics of Entrepreneurship;4,00;spring 
+I100;Introduction to Informatics;3,50;autumn - spring 
+I103;Logic and Algorithms Theory /Discrete Mathematics;4,50;autumn
+I105;Linear Algebra and Numerical Computations;4,00;autumn
+I106;IT Systems Support and Arrangement in Enterprises;3,50;autumn
+I107;Algebra and Graph Theory;4,00;autumn - spring 
+I108;Introduction to Terminology;3,00;autumn - spring 
+I110;Physics for Poets;4,00;autumn - spring 
+I111;Introduction to Informatics;3,00;autumn - spring 
+I112;Logic and Algorithms Theory /Discrete Mathematics;4,00;autumn - spring 
+I113;IT Systems Support and Arrangement in Enterprises;4,00;autumn - spring 
+I114;Physics for Poets;3,00;autumn - spring 
+I201;Computers;4,00;autumn - spring 
+I202;Network Applications I: Client-Server Systems;5,00;autumn - spring 
+I203;Telecommunication Basics;0,00;autumn - spring 
+I204;Analysis and Design of Information Systems;5,50;autumn - spring 
+I205;System Programming in C;5,50;autumn - spring 
+I206;Database Basics;5,00;autumn - spring 
+I208;Telecommunications Networks;4,50;autumn - spring 
+I210;Office Software Programming;5,00;autumn - spring 
+I211;Network Administration, Routers;4,50;autumn - spring 
+I212;Object Oriented Programming;3,00;autumn - spring 
+I213;Operating System Administration;5,50;autumn - spring 
+I214;Functional and Logic Programming;4,00;autumn - spring 
+I215;Software Protection;1,50;autumn - spring 
+I216;Database Administration;3,50;autumn - spring 
+I217;Real-Time Systems I: Design and Programming;3,50;autumn - spring 
+I218;Hardware Programming;3,50;autumn - spring 
+I219;Software Techniques;3,00;autumn - spring 
+I220;Intellectual Capital Theory;3,50;autumn - spring 
+I221;Foundations of System Theory;3,50;autumn - spring 
+I222;Basics of Telecommunication;4,50;autumn - spring 
+I223;Telecommunications Networks;5,50;autumn - spring 
+I224;Art of Persuation;3,00;autumn - spring 
+I225;Textual Study;3,00;autumn - spring 
+I226;Technical Applications of Language;3,00;autumn - spring 
+I227;Marketing Research;3,00;autumn - spring 
+I228;Software Technologies;5,50;autumn - spring 
+I232;Network Administration, Routers;4,00;autumn - spring 
+I234;Software Protection;2,00;autumn - spring 
+I235;Database Administration;4,00;autumn - spring 
+I236;Real-Time Systems I: Design and Programming;4,00;autumn - spring 
+I237;Hardware Programming;4,00;autumn - spring 
+I240;Basics of Telecommunication;4,00;autumn - spring 
+I241;Telecommunications Networks;5,00;autumn - spring 
+I242;Software Technologies;5,00;autumn - spring 
+I246;Office Software Programming;5,00;autumn - spring 
+I247;Art of Persuation;3,00;autumn - spring 
+I248;Marketing Research;3,00;autumn - spring 
+I251;Logic Programming;2,00;autumn - spring 
+I252;Functional Programming;3,00;autumn - spring 
+I300;User Interfaces on Base of Network Technology;4,50;autumn - spring 
+I301;Data Security and Cryptology;4,50;autumn - spring 
+I302;Information System Projects and Administration;5,00;autumn - spring 
+I303;Network Applications II: Distributed Systems;5,00;autumn - spring 
+I304;Database Integration and Optimisation;5,50;autumn - spring 
+I306;E-Commerce and Business System Design;5,50;autumn - spring 
+I307;Digital Communication;3,00;autumn - spring 
+I308;Computer Graphics Theory;5,00;autumn - spring 
+I310;Operating Systems Technology;5,00;autumn - spring 
+I311;System Modeling and Control;5,00;autumn - spring 
+I312;Real-Time Systems II: Pre-Run-Time Timing Analysis;5,00;autumn - spring 
+I315;CISCO: Configuring Switches and Understanding VLANs;3,50;autumn - spring 
+I316;CISCO: Basics of WAN's. Understanding WAN Protocols;4,00;autumn - spring 
+I318;Business English for IT Specialists;4,50;autumn - spring 
+I320;Project I;4,50;autumn - spring 
+I321;Project II;4,50;autumn - spring 
+I323;Rational Unified Process;4,50;autumn - spring 
+I324;IT Strategy;4,50;autumn - spring 
+I326;Software Development Methodology;4,50;autumn - spring 
+I327;IT Architecture;4,50;autumn - spring 
+I328;Creative Problem Solving and Innovatics;1,50;autumn - spring 
+I330;Communication Management;3,00;autumn - spring 
+I331;Prepress and Workflow;3,00;autumn - spring 
+I333;Developing Business Network Service;4,50;autumn - spring 
+I334;Linux Administration;3,00;autumn - spring 
+I335;Developing Business Network Service;3,50;autumn - spring 
+I336;Information System Projects and Administration I;2,00;autumn - spring 
+I337;Information System Projects and Administration II;3,00;autumn - spring 
+I338;Business Analysis Techniques and Business Logic Modeling;4,50;autumn - spring 
+I340;Basic of GIS;3,00;autumn - spring 
+I341;Building Web Applications with Microsoft ASP.NET 2.0;4,00;autumn - spring 
+I342;Windows Server 2003 Administration;3,00;autumn - spring 
+I343;CCNP 1 Advanced Routing;4,50;autumn - spring 
+I344;User Interfaces on Base of Network Technology;5,00;autumn - spring 
+I345;Data Security and Cryptology;5,00;autumn - spring 
+I346;Database Integration and Optimisation;5,00;autumn - spring 
+I347;E-Commerce and Business System Design;5,00;autumn - spring 
+I348;Digital Audio and Video Processing;4,00;autumn - spring 
+I351;Project II;5,00;autumn - spring 
+I352;Rational Unified Process;5,00;autumn - spring 
+I353;IT Strategy;4,00;autumn - spring 
+I354;Software Development Methodology;5,00;autumn - spring 
+I355;IT Architecture;5,00;autumn - spring 
+I356;Creative Problem Solving and Innovatics;2,00;autumn - spring 
+I357;Linux Administration;4,00;autumn - spring 
+I358;Business Analysis Techniques and Business Logic Modeling;5,00;autumn - spring 
+I360;Project;5,00;autumn - spring 
+I361;Project;5,00;autumn - spring 
+I362;CISCO: Configuring Switches and Understanding VLANs;4,00;autumn - spring 
+I363;IT Infrastructure Services;5,00;autumn - spring 
+I364;IMS Overview;3,00;autumn - spring 
+I365;Foundations of Software Testing;3,00;autumn - spring 
+I367;Windows Server Administration;3,00;autumn - spring 
+I368;Data Architecture;5,00;autumn - spring 
+I370;Maintenance of Windows Workstations;3,00;autumn - spring 
+I371;Network Applications II: Distributed Systems;5,00;autumn - spring 
+I372;Operating Systems Technology;5,00;autumn - spring 
+I373;CISCO: Basics of WAN's. Understanding WAN Protocols;4,00;autumn - spring 
+I374;Intercultural Communication;3,00;autumn - spring 
+I375;Fundamentals of Wireless LANs;3,00;autumn - spring 
+I376;Building Web Applications with Microsoft ASP.NET;4,00;autumn - spring 
+I377;Web Programming and Design with Java;5,00;autumn - spring 
+I380;Project II;5,00;autumn - spring 
+I381;Unified Process;5,00;autumn - spring 
+I382;Project;5,00;autumn - spring 
+I383;Project;5,00;autumn - spring 
+I384;CISCO: Configuring Switches and Understanding VLANs;4,00;autumn - spring 
+I385;IT Infrastructure Services;5,00;autumn - spring 
+I387;Scripting Languages;4,00;autumn - spring 
+I388;CCNP 2 Switching;5,00;autumn - spring 
+I390;Advanced User Interfaces;5,00;autumn - spring 
+I391;Advanced User Interfaces;6,00;autumn - spring 
+I392;Data Modelling and Data Base Design;5,00;autumn - spring 
+I393;Introduction to Mobile Apple Technologies;3,00;autumn - spring 
+I394;Mobile Application Development on Microsoft Platform;3,00;autumn - spring 
+I395;Information Storage Technologies;3,00;autumn - spring 
+I396;Unit Testing;4,00;autumn - spring 
+I397;Mobile Software Development for Android;3,00;autumn - spring 
+I398;Automated Testing;4,00;autumn - spring 
+I400;Practice;15,00;autumn - spring 
+I401;Introduction to Internship;1,50;autumn - spring 
+I402;College Practice Project;9,00;autumn - spring 
+I403;Enterprise Internship;25,50;autumn - spring 
+I406;Project;4,50;autumn - spring 
+I407;Enterprise Internship I;12,00;autumn - spring 
+I408;Enterprise Internship II;13,50;autumn - spring 
+I410;Enterprise Internship II;14,00;autumn - spring 
+I411;Introduction to Internship;1,00;autumn - spring 
+I412;Enterprise Internship I;12,00;autumn - spring 
+I413;Enterprise Internship I;12,00;autumn - spring 
+I414;Enterprise Internship I;12,00;autumn - spring 
+I415;Enterprise Internship II;14,00;autumn - spring 
+I416;Enterprise Internship II;14,00;autumn - spring 
+I417;Enterprise Internship II;14,00;autumn - spring 
+I418;Enterprise Internship;27,00;autumn - spring 
+I420;Enterprise Internship;27,00;autumn - spring 
+I421;Internship;27,00;autumn - spring 
+I502;Research Project II;4,00;autumn - spring 
+I606;Networking;6,00;autumn - spring 
+I703;Python;4,00;autumn - spring 
+I707;Algorithms and Data Structures;5,00;spring 
+I712;Configuration Management Systems;4,00;autumn - spring 
+I713;Web Development II;6,00;autumn - spring 
+I714;Mobile App Programming;6,00;autumn - spring 
+I716;Automated Testing;4,00;autumn - spring 
+I717;Functional Programming;3,00;autumn - spring 
+I718;Reverse Engineering;6,00;autumn - spring 
+I801;Logging and Monitoring;6,00;autumn 
+I802;Firewalls and VPN/IPSec;4,00;autumn - spring 
+I804;Linux/Windows Administration;4,00;autumn - spring 
+I805;Authentication and Authorization;4,00;autumn - spring 
+I900;Governance and Management of Cyber Security;6,00;autumn - spring 
+I901;Web Application Security;6,00;autumn - spring 
+I902;Secure Programming;4,00;autumn - spring 
+I903;System Design;5,00;autumn - spring 
+I904;Network Security;4,00;autumn - spring 
+I905;Malware;3,00;autumn - spring 
+I906;Intrusion Detection/Prevention Systems;4,00;autumn - spring 
+I907;Digital Forensics;4,00;autumn - spring 
+I908;Incident Handling;3,00;autumn - spring 
+IAF0041;Computers;5,00;spring 
+IAF0050;Testing of Digital Systems;5,00;spring 
+IAF0320;Computer Systems Engineering;5,00;autumn 
+IAF0510;Design for Testability;5,00;autumn 
+IAF0520;Programmable Logic;5,00;spring 
+IAF0530;Dependability and Fault Tolerance;5,00;spring 
+IAF0610;Design for Test;5,00;autumn 
+IAF0620;Verification of Digital Systems;5,00;autumn 
+IAF9530;Dependable Systems;6,00;spring 
+IAF9550;Fault Location and Error Diagnosis in Digital Systems;5,00;autumn 
+IAG0010;Advanced Course in Programming I;5,00;autumn 
+IAG0060;Software Project Management;5,00;spring 
+IAG0061;Software Project Management;6,00;spring 
+IAG0090;Algorithms and Data Structures;5,00;autumn
+IAG0100;Software Engineering ;5,00;autumn
+IAG0190;Ontology Engineering;4,00;autumn 
+IAG0200;System Design;5,00;spring 
+IAG0410;Basics of Computer Aided-Design;5,00;autumn 
+IAG0420;Foundations and Management of Cyber Security;5,00;autumn 
+IAG0450;Analysis of Programming Languages;5,00;autumn 
+IAG0520;Networking Applications of Databases;5,00;autumn 
+IAG0540;Special Course of Programming (Java);5,00;spring 
+IAG0550;An Analysis of Algorithmic Languages;5,00;spring 
+IAG0560;Software project management;5,00;spring 
+IAG0581;Programming I;5,00;autumn 
+IAG0582;Programming II;5,00;spring 
+IAG0620;Operating Systems;5,00;autumn 
+IAG0650;Design and Development of Data Exchange Layer for Government Information Systems;6,00;spring 
+IAG7901;Informatics;4,00;autumn - spring 
+IAG9610;Software Project Management;5,00;autumn - spring 
+IAS0001;Introduction to Speciality;6,00;autumn 
+IAS0011;Circuits, Systems, Signals;6,00;autumn - spring 
+IAS0012;Circuits, Systems, Signals;6,00;autumn - spring 
+IAS0020;Automatic Control and Systems Analysis;6,00;spring 
+IAS0023;Intelligent Control Systems;6,00;autumn 
+IAS0031;Modeling and Identification;6,00;spring 
+IAS0042;Digital image processing 3;3,00;autumn - spring 
+IAS0051;Applied Data Communication;6,00;autumn 
+IAS0060;Robotics;6,00;spring 
+IAS0065;Control Instrumentation;6,00;autumn 
+IAS0089;Advanced Programmable Logic Controllers;6,00;autumn 
+IAS0090;Algorithms and Data Structures;6,00;autumn 
+IAS0110;Software Engineering ;6,00;autumn - spring 
+IAS0130;Process Control;6,00;autumn 
+IAS0150;Digital Systems;6,00;autumn 
+IAS0190;Intelligent Buildings;6,00;autumn - spring 
+IAS0220;Robot guidance and software;6,00;autumn 
+IAS0230;Basics of Embedded Systems;6,00;autumn 
+IAS0250;Systems Testing;6,00;spring 
+IAS0320;Computer Systems Engineering;6,00;autumn 
+IAS0330;Embedded Systems;6,00;spring 
+IAS0340;Digital Systems Modeling and Synthesis;6,00;spring 
+IAS0350;Reliability and Quality in Nanoelectronics;6,00;autumn 
+IAS0355;Reliability and Quality in Nanoelectronics: Short Course;3,00;spring 
+IAS0410;Object Oriented Programming;6,00;autumn 
+IAS0420;Foundations and Management of Cyber Security;6,00;autumn 
+IAS0430;Microprocessor Systems;6,00;autumn 
+IAS0450;Analysis of Programming Languages;6,00;autumn 
+IAS0460;Software Project Management;6,00;spring 
+IAS0470;Research Seminar ;6,00;autumn 
+IAS0510;Basics of Computer Aided-Design;6,00;autumn 
+IAS0520;Computer Architectures;6,00;autumn 
+IAS0530;Dependability and Fault Tolerance;6,00;spring 
+IAS0550;Systems-on-Chip Design;6,00;autumn 
+IAS0600;Digital Systems Design with VHDL;6,00;autumn 
+IAS0610;Design for Test;6,00;autumn 
+IAS0620;Verification of Digital Systems;6,00;autumn 
+IAS0720;Industrial Training;6,00;autumn - spring 
+IAS0730;Teaching Practice;6,00;autumn - spring 
+IAS1410;Software Project;6,00;autumn - spring 
+IAS1420;Computers and Systems Project;6,00;autumn - spring 
+IAX0010;Discrete Mathematics;6,00;autumn - spring 
+IAX0043;Computers;6,00;autumn - spring 
+IAX0050;Programming;3,00;autumn - spring 
+IAX0230;Basics of Embedded Systems;5,00;autumn 
+IAX0250;Systems Testing;5,00;spring 
+IAX0583;Programming I;6,00;autumn - spring 
+IAX0584;Programming II;6,00;autumn - spring 
+IAX0585;Programming in C and C++;6,00;spring 
+IAX0600;Digital Systems Design;6,00;autumn - spring 
+IAY0010;Discrete Mathematics;6,00;autumn 
+IAY0140;Computer Arithmetic and Logic;5,00;spring 
+IAY0150;Digital Systems;5,00;autumn 
+IAY0200;Practice;6,00;autumn - spring 
+IAY0330;Embedded Systems;5,00;autumn 
+IAY0340;Digital Systems Modeling and Synthesis;5,00;spring 
+IAY0351;Special Course on Digital Technics I;2,00;autumn - spring 
+IAY0352;Special Course on Digital Technics II;3,00;autumn - spring 
+IAY0354;Special Course on Digital Systems I;4,00;autumn - spring 
+IAY0355;Special Course on Digital Systems II;5,00;autumn - spring 
+IAY0361;Automated Testing;4,00;autumn 
+IAY0520;Computer Architectures;5,00;autumn 
+IAY0550;Systems-on-Chip Design;5,00;spring 
+IAY0600;Digital Systems Design;5,00;autumn - spring 
+IAY0610;Verification of digital systems;5,00;autumn 
+IAY0700;Practical Training;3,00;autumn - spring 
+IAY0720;Practical Training;4,00;autumn - spring 
+IAY0900;Refresher Course in Computer Basics;2,00;autumn - spring 
+IAY9010;Multimedia Systems;3,00;autumn - spring 
+IAY9150;Design of Digital System - Advanced Course I;3,00;autumn - spring 
+IAY9610;Optimization Algorithms for Hardware Synthesis;5,00;autumn - spring 
+IBX0010;Advanced Robotics;4,00;spring 
+IBX0030;Innovation and Creative Problem Solving;3,00;spring 
+IBX0040;The ShanghAI Lectures: Natural and Artificial Intelligence - Steps Towards a Scientific Foundation;6,00;autumn 
+IBX0060;Robotics;5,00;autumn 
+ICA0001;Operating systems and its management;6,00;autumn - spring 
+ICA0002;IT Infrastructure Services;6,00;autumn 
+ICA0003;Data Security and Cryptology;6,00;autumn 
+ICA0004;IT Systems Support and Arrangement in Enterprises;3,00;spring 
+ICA0005;Database Basics;6,00;autumn 
+ICA0006;Information Storage Technologies;6,00;autumn - spring 
+ICA0007;Linux Administration;6,00;autumn - spring 
+ICA0008;Fundamentals of Wireless LANs;3,00;autumn - spring 
+ICA0009;Windows administration;6,00;autumn - spring 
+ICA0010;Advanced routing and switching;6,00;autumn - spring 
+ICA0011;Scripting Languages;3,00;autumn - spring 
+ICA0012;Introduction to Informatics and hardware;6,00;autumn - spring 
+ICA0013;Fundamentals of networking;6,00;autumn - spring 
+ICA0014;Advanced networking;6,00;autumn - spring 
+ICA0015;Computer Network Security;3,00;autumn - spring 
+ICA0016;Oracle: Programming Languages SQL and PL/SQL;3,00;autumn 
+ICA0017;Basics of Cloud Computing;3,00;spring 
+ICD0001;Algorithms and Data Structures;6,00;autumn 
+ICD0002;Computer Graphics Theory;6,00;autumn 
+ICD0003;Advanced User Interfaces;6,00;autumn 
+ICD0004;Automated Testing;3,00;autumn 
+ICD0005;User Interfaces Design and Development;6,00;spring 
+ICD0006;JavaScript;6,00;spring 
+ICD0007;Web technologies;6,00;autumn - spring 
+ICD0008;Programming in C#;6,00;autumn 
+ICD0009;Building Distributed Systems;6,00;spring 
+ICD0010;Software Techniques;6,00;spring 
+ICD0011;Web Programming and Design with Java;6,00;autumn 
+ICD0012;Foundations of Software Testing;6,00;spring 
+ICD0014;Digital Audio and Video Processing ;3,00;autumn 
+ICD0015;ASP.NET Web applications;6,00;spring 
+ICD0016;Functional Programming;3,00;autumn 
+ICD0017;Native Mobile Applications;6,00;autumn 
+ICD0018;Hybrid Mobile Applications;6,00;autumn 
+ICD0019;Java;6,00;autumn - spring 
+ICD0020;Web Management Environments ;6,00;autumn 
+ICM0001;Social, Professional and Ethical Aspects of IT;6,00;spring 
+ICM0002;Introduction to Programming;6,00;spring 
+ICM0003;Global and Technology Trends;6,00;autumn 1 
+ICM0004;Data Structures;6,00;autumn 
+ICM0005;Databases;6,00;autumn 
+ICM0006;Business Information Modelling;6,00;spring 
+ICM0007;Analysis and Design of Information Systems;3,00;autumn 
+ICM0008;Software Engeneering;6,00;autumn 
+ICM0009;User Interface and Application Design;6,00;autumn 
+ICM0011;IT Architecture;6,00;spring 
+ICM0012;IT Systems Support and Arrangement in Enterprises;6,00;autumn 
+ICM0014;MicroServices and Container Architecture ;3,00;autumn 
+ICM0015;Business Process Management;6,00;autumn 
+ICM0016;Information System Project and Portfolios;6,00;spring2 
+ICM0017;IT Strategy;6,00;autumn 
+ICM0018;Cyber Security Architecture;6,00;spring 
+ICM0019;Enterprise Architecture Special Seminar;9,00;autumn 
+ICM0023;Foundation of System Theory;6,00;autumn 
+ICM0024;Querly Language SQL and NoSQ;6,00;spring 
+ICM0027;System architecture Foundation;3,00;spring 
+ICM0029;Practice;6,00;autumn - spring 
+ICM0030;Advanced Analysis and Design of Information Systems ;3,00;spring 
+ICM0031;Data Analysis;6,00;spring 
+ICM0032;IT Governance and Management;6,00;autumn 
+ICS0001;Introduction to Informatics and Computers;6,00;autumn 
+ICS0003;Introduction to Cyber Security;6,00;spring 
+ICS0004;Fundamentals of Programming;6,00;autumn 
+ICS0005;Algorithms and Data Structures;6,00;spring 
+ICS0009;Governance and Management of Cyber Security;6,00;spring 
+ICS0013;Fundamentals of Ruby;3,00;spring 
+ICS0014;Java Technologies;3,00;spring 
+ICS0015;Fundamentals of Python;3,00;spring 
+ICS0016;Fundamentals of C#;3,00;autumn 
+ICS0017;Fundamentals of C/C++ Programming;6,00;autumn 
+ICS0019;Advanced Python;3,00;spring 
+ICS0020;Logging and Monitoring;6,00;autumn 
+ICS0023;Robotics ;6,00;autumn 
+ICS0024;Automated Testing;3,00;autumn 
+ICS0025;Advanced C/C++;6,00;spring 
+ICS0026;Cryptography ;6,00;spring 
+ICS0027;Web Application Security;6,00;autumn 
+ICS0030;Machine Learning;6,00;autumn 
+ICS0031;Secure Programming;3,00;autumn 
+ICS0033;Computer forensics;3,00;autumn 
+ICS0034;Reverse Engineering;3,00;autumn 
+ICY0001;Logic and Discrete Mathematics;6,00;autumn 
+ICY0003;Oral and Written Communication Skills;6,00;autumn 
+ICY0004;Social, Professional and Ethical Aspects of IT;6,00;autumn - spring 
+ICY0006;Probability Theory and Mathematical Statistics;3,00;autumn 
+ICY0007;English for IT Specialists;6,00;autumn 
+ICY0008;Business English for IT Specialists;6,00;spring 
+ICY0009;Information Systems Projects and Project Management;6,00;spring 
+ICY0012;Analysis and Design of Information Systems;6,00;autumn 
+ICY0013;Business Communication and Communication Psychology;3,00;autumn - spring 
+ICY0016;Fundamentals of Thesis;3,00;autumn - spring 
+ICY0017;Enterprise Internship;24,00;spring 
+ICY0019;Economics;6,00;autumn 
+ICY0021;Philosophy;3,00;autumn 
+ICY0023;Intellectual Capital Theory;3,00;autumn 
+ICY0024;Sets, relations, systems;6,00;autumn 
+ICY0025;Logic;6,00;spring 
+ICY0026;Project;6,00;autumn 
+ICY0029;Principles of Entrepreneurship;3,00;spring 
+ICY0030;Higher Mathematics;6,00;autumn - spring 
+ICY0031;Basics of Enterprenuership and Business Communication;6,00;autumn - spring 
+IDK0012;Informatics II;4,00;spring 
+IDK0015;Information Processing;5,00;autumn 
+IDK0017;The Basics of Applications Creation and Programming;3,00;autumn - spring 
+IDK0018;Programming in Python for advanced students;3,00;spring 1 
+IDK0021;Informatics I;4,00;autumn 
+IDK0022;Informatics II;4,00;spring 
+IDK0023;Informatics I;4,00;autumn 
+IDK0024;Informatics II;4,00;spring 
+IDK0025;Informatics I (Law and International Relations);4,00;autumn 
+IDK0041;IT Foundations I;4,00;autumn 
+IDK0042;IT Foundations II;4,00;spring 
+IDK0043;IT Foundations I;3,00;autumn - spring 
+IDK0044;IT Foundations II;3,00;autumn - spring 
+IDK0045;Enhanced IT Foundations I;6,00;autumn 
+IDK0046;Enhanced IT Foundations II;6,00;spring 
+IDK0051;Object-oriented Programming in the Java Language;5,00;autumn 
+IDK0061;The C Language and Object-oriented Programming;5,00;autumn 
+IDK0070;Software Engineering;5,00;autumn 
+IDK0071;Software Engineering;5,00;autumn - spring 
+IDK0080;Informatics for Economists;6,00;autumn 
+IDK0091;Informatics I (engineering);4,00;autumn 
+IDK0092;Informatics II (engineering);4,00;spring 
+IDK0093;Creation of Applications and the Basics of Programming (for teachers);6,00;autumn - spring 
+IDK0110;Informatics for Chemical Specialities;6,00;autumn 
+IDK0300;IT Solutions of e-government;3,00;spring 
+IDK0301;IT Solutions of e-government;4,00;spring 
+IDK0302;IT Solutions of e-government;3,00;spring 
+IDK0310;Automated and Systematised Legal Process;3,00;autumn 
+IDK1011;Introduction to Programming;4,00;autumn 
+IDK1015;Programming and Introduction to Algorithms;5,00;spring 
+IDK1031;Programming in C Language;5,00;spring 
+IDK1331;User Interface Design;3,00;autumn 1 
+IDK1332;Usability and User Experience;5,00;autumn - spring 
+IDK1531;Advanced C++ course;5,00;spring 
+IDK1603;Information Systems Development I;10,00;autumn 
+IDK1604;Information Systems Development II;10,00;spring 
+IDK1606;Basic introduction to mobile development and applications on Android;3,00;spring 
+IDK1615;Data Processing;6,00;autumn - spring 
+IDK1651;Business Critical Information System Development Using Progress;5,00;autumn 
+IDK2015;Object-oriented Programming;5,00;autumn 
+IDK2081;Information Technology;6,00;spring 
+IDK3212;Cancer bioinformatics;1,00;spring2 
+IDK5151;Agent-oriented Modelling and Multiagent Systems;5,00;spring 
+IDK6100;Social Software and Online Communities;5,00;spring 
+IDK9010;Special Topics in Agent-Oriented Modelling;5,00;autumn - spring 
+IDN0011;Introduction to Speciality;2,00;autumn 1 
+IDN0020;Introduction to Speciality;2,00;autumn 1 
+IDN0100;Data Mining;5,00;autumn 
+IDN0101;Data Mining - Project;2,00;autumn 
+IDN0110;Data Mining and Network Analysis;6,00;autumn 
+IDN0300;Enterprise Information Interchange;3,00;autumn 1 
+IDN1605;Mining Big Data;6,00;spring 
+IDN1653;Colored Petri Nets: Models and Validation;5,00;autumn 
+IDN1654;Foundations of Information Security Risk Analysis;5,00;spring 
+IDN5120;Exact Methods in Decision Processes;5,00;autumn 
+IDN5340;Analytical Methods of Supply Chain Management;3,00;autumn 1 
+IDN5360;Business Intelligence and Visual Analytics;3,00;autumn 
+IDN5420;Applied Data Analysis;5,00;spring 
+IDN5430;Analytical Methods of Logistics;5,00;autumn 
+IDN5440;Revenue Management and Pricing;3,00;spring 
+IDN8031;Complexity theory;6,00;spring 
+IDN8071;Special seminar for master and doctoral students;6,00;autumn - spring 
+IDN8901;Scientific presentations;3,00;autumn - spring 
+IDN9030;Complexity Theory;6,00;spring 
+IDN9031;Complexity theory;6,00;spring 
+IDN9040;Business Intelligence and Data Mining: Methods and Applications;6,00;spring 
+IDN9041;Data Mining for Healthcare Management;6,00;spring 
+IDN9050;Special Topics of Data Mining;5,00;autumn 
+IDN9061;Special seminar for candidates for doctor degree;5,00;autumn 
+IDN9062;Special seminar for candidates for doctor degree;5,00;spring 
+IDN9063;Special seminar for candidates for doctor degree;5,00;autumn 
+IDS8040;Fundamentals of Cryptography;3,00;spring 1 
+IDS8041;Foundations of cryptography ;3,00;autumn - spring 
+IDS9030;Special Topics of Cryptography;5,00;autumn - spring 
+IDU0010;Data Warehouse, ERP and CRM Systems;5,00;autumn 
+IDU0021;Strategic Analysis of Information System;5,00;autumn 
+IDU0031;Fundamentals of Writing and Making a Speech;5,00;autumn 
+IDU0035;Writing theses;2,00;spring 
+IDU003P;Special Practice;3,00;autumn - spring 
+IDU0040;Strategic Management and Development of Information Systems;5,00;autumn - spring 
+IDU004P;Special Practice;2,00;autumn - spring 
+IDU0050;Object-oriented Design;5,00;autumn 
+IDU005P;Special Practice;4,00;autumn - spring 
+IDU006P;Practice;6,00;autumn - spring 
+IDU0075;Web Services;5,00;autumn - spring 
+IDU0080;Web Services and the Architecture of Web Solutions;5,00;spring 
+IDU0111;Business Process Modeling and Automation;5,00;autumn 
+IDU0116;Business Analysis;5,00;spring 
+IDU0131;Network Applications (logistics);4,00;spring 
+IDU0180;Special Seminar for Master Study Students;5,00;autumn - spring 
+IDU0191;Process Engineering in Information Systems Development;5,00;autumn 
+IDU0192;Process Engineering in Information Systems Development - project;2,00;autumn - spring 
+IDU0200;Web-based Applications - Architecture, Desing and Technology;5,00;spring 
+IDU0210;Distributed Architectures;5,00;autumn 
+IDU0220;Databases I;5,00;spring 
+IDU0230;Databases II;5,00;autumn 
+IDU0310;Internet of Things Solutions: Smart Devices, Processes and Services;6,00;autumn 
+IDU0320;Business Information Systems;6,00;autumn - spring 
+IDU0330;Business Process Modeling and Automation;6,00;autumn 
+IDU0390;Business Process Management and Enterprise Architecture;9,00;spring 
+IDU0400;e-Governance: Policies, Strategies and Frameworks;6,00;spring 
+IDU0401;Master's Seminar;2,00;autumn - spring 
+IDU0404;Introduction to IT and eGov Technologies;6,00;autumn 
+IDU0405;Information Society Concepts and Principles;3,00;autumn 
+IDU0406;Information Society Concepts and Principles;3,00;autumn 
+IDU0410;Concepts of e-Democracy;3,00;autumn 
+IDU0411;E-Governance Services and Technologies Master's Seminar I;3,00;spring 
+IDU0412;E-Governance Technologies and Services Master's Seminar II;3,00;autumn 
+IDU0420;Planning and Implementing e-governance;6,00;spring 
+IDU0425;Methodology for e-governance Implementation and Marketing;6,00;autumn 
+IDU0430;Information Management and Digital Archiving ;6,00;autumn 
+IDU0440;Virtual Environments Usability;6,00;autumn - spring 
+IDU0450;Team-work Project;6,00;spring 
+IDU0451;Startup Project;6,00;spring 
+IDU0455;Introduction to Development in Cloud;6,00;autumn 
+IDU0460;Enterprise Business Architecture Development;6,00;autumn 
+IDU0470;Service-Orientation in the Public Sector;6,00;spring 
+IDU0475;Security and Privacy in a Networked World;6,00;spring 
+IDU0476;Public Sector Service Design and Implementation;9,00;autumn 
+IDU0480;Foundations of Cyber Security;6,00;autumn 
+IDU0815;Information Systems Programming;6,00;autumn - spring 
+IDU1321;Enterprise Business Architecture;5,00;autumn 
+IDU1322;Enterprise Business Architecture - project;2,00;autumn 
+IDU1341;IT Management;5,00;autumn 
+IDU1342;Information Systems Security;5,00;spring 
+IDU135P;Special Practice;5,00;autumn - spring 
+IDU1550;Software Architecture and Design;6,00;autumn 
+IDU1601;Information Systems and their Social and Economic Aspects;5,00;autumn 
+IDU1603;Introduction to Information Systems;6,00;autumn 
+IDU1605;Team Project in Information Systems Development;5,00;autumn 
+IDU1606;Introduction to Data Bases;6,00;spring 
+IDU1652;Project Management in Information Systems Development;5,00;autumn 
+IDU3350;Introduction to Information Systems;5,00;autumn 
+IDU3355;Modelling;5,00;spring 
+IDU3390;Information Systems Project Management;5,00;autumn - spring 
+IDU3530;Introduction to Information Systems;4,00;autumn 
+IDU5360;System Analysis;5,00;autumn - spring 
+IDU8520;Software - project;6,00;autumn - spring 
+IDU9020;Advanced Topics of Information Systems Development II;8,00;spring 
+IDU9060;Requirements Engineering - Model Driven Approach;6,00;autumn - spring 
+IDU9070;Model Driven Architecture ;5,00;autumn - spring 
+IDX1511;Software Processes and Quality;6,00;autumn 
+IDX5040;Multimedia;5,00;spring 
+IDX5060;Game and Avatar Programming;6,00;autumn 
+IDX5711;Intelligent Systems;5,00;spring 
+IDX5712;Intelligent Systems - Project;2,00;spring 
+IDX5721;Software Quality and Standards;5,00;autumn 
+IDX5722;Software Quality and Standards - Course Paper;2,00;autumn 
+IDX8500;Teaching Practice;6,00;autumn - spring 
+IDX9022;Applications of Artificial Intelligence in Information and Knowledge Based Systems;5,00;spring 
+IDY0201;Requirements Engineering;6,00;autumn 
+IDY0202;Software Engineering Paradigms;6,00;autumn 
+IDY0203;Agent-Oriented Modelling and Multiagent Systems;6,00;spring 
+IDY0204;Software Quality and Standards;6,00;autumn 
+IDY0275;Business Information Systems;4,00;autumn 
+IDY0303;Agent-oriented Modelling and Multiagent Systems;5,00;spring 
+IDY0402;Technological Innovation;5,00;autumn - spring 
+IXX9103;Academic writing;6,00;autumn 
+IXX9104;Research internship abroad or in industry;3,00;autumn - spring 
+IXX9105;Subject-specific individual studies;6,00;autumn - spring 
+IXX9106;Doctoral Seminar;6,00;autumn - spring 
+IXX9107;Doctoral Teaching Practice;6,00;autumn - spring 
+IXX9501;Doctoral Degree Course Seminar;6,00;autumn - spring 
+IXX9502;Doctoral Degree Course Seminar;6,00;autumn - spring 
+IXX9503;Doctoral Degree Course Seminar;6,00;autumn - spring 
+IXX9510;Professional Training;6,00;autumn - spring 
+IXX9601;Doctoral Seminar I;5,00;autumn - spring 
+IXX9602;Doctoral Seminar II;5,00;autumn - spring 
+IXX9603;Doctoral Seminar III;5,00;autumn - spring 
+IXX9611;Doctoral Teaching Practice I;5,00;autumn - spring 
+IXX9612;Doctoral Teaching Practice II;5,00;autumn - spring 

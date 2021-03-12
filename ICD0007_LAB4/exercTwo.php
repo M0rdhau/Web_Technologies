@@ -26,6 +26,7 @@
       fgets($handle);
       $numLines++;
     }
+    fclose($filename);
     return $numLines;
   }
 

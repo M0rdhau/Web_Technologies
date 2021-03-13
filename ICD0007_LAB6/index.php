@@ -20,7 +20,7 @@ if
   $courseCode = $_POST['code'];
   $spring = isset($_POST['spring']);
   $autumn = isset($_POST['autumn']);
-  header( "Location: {$_SERVER['REQUEST_URI']}", true, 303 );
+  // header( "Location: {$_SERVER['REQUEST_URI']}", true, 303 );
 }
 
 // Assign values

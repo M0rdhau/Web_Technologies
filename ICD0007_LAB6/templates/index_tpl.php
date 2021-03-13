@@ -3,12 +3,13 @@
 
 <head>
   <title>{TITLE}</title>
+  <link rel="stylesheet" href="styles/courses.css">
 </head>
 
 <body>
   <h1>{TITLE}</h1>
   <div>{FORM}</div>
-  <div>{TABLE}</div>
+  <div id="display">{TABLE}</div>
 </body>
 
 </html>

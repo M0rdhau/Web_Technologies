@@ -41,19 +41,19 @@ class Template
             $table .= "</tr></thead>";
           }
           $table .= "<tbody>";
-          for ($i = 0; $i < $rows; $i++) {
+          foreach($replaceWithTable as $tableContent) {
             $table .= "<tr>";
             $table .= "<td>";
-            $table .= $replaceWithTable[$i]->code;
+            $table .= $tableContent->code;
             $table .= "</td>";
             $table .= "<td>";
-            $table .= $replaceWithTable[$i]->name;
+            $table .= $tableContent->name;
             $table .= "</td>";
             $table .= "<td>";
-            $table .= $replaceWithTable[$i]->ects;
+            $table .= $tableContent->ects;
             $table .= "</td>";
             $table .= "<td>";
-            $table .= $replaceWithTable[$i]->term;
+            $table .= $tableContent->term;
             $table .= "</td>";
             $table .= "</tr>";
           }

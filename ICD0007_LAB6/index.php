@@ -12,8 +12,8 @@ $tableHead = ["code", "name", "points", "semester"];
 $form = file_get_contents("static/form.html");
 
 $courseCode = "ICD";
-$spring = true;
-$autumn = true;
+$spring = false;
+$autumn = false;
 
 if
 ($_POST && isset($_POST['code'])){

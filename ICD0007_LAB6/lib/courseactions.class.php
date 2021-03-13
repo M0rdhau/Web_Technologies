@@ -56,7 +56,7 @@ class CourseActions
 
   public static function checkCourseCode($code, &$array)
   {
-    if ($code === "I00") {
+    if (preg_match("/I00/", $code)) {
       return array_filter($array, 'filterSmall');
     } else if (preg_match("/^[A-Z]{3}$/", $code)) {
       $filtered = array();

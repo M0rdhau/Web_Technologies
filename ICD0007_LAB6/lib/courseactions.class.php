@@ -31,7 +31,7 @@ class CourseActions
 
   public static function courses($filename, $filter, $spring, $autumn)
   {
-    $dummyCourse = new Course(";No course found;;");
+    $dummyCourse = new Course(";No courses found;;");
     $handle = fopen($filename, 'r');
     $courses = array();
     $line = fgets($handle);
@@ -51,9 +51,8 @@ class CourseActions
       $filtered = array_filter($filtered, 'self::filterAutumn');
     }
     uasort($filtered, 'self::sortCourses');
-    if ($filtered === null) {
-      $filtered = array();
-      array_push($filtered, $dummyCourse);
+    if (count($filtered) == 0) {
+      return [$dummyCourse];
     }
     return $filtered;
   }

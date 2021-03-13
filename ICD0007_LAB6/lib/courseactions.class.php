@@ -16,6 +16,18 @@ class CourseActions
     return $dataArr;
   }
 
+  public static function sortCourses($a, $b){
+    $aEcts = intval($a->ects);
+    $bEcts = intval($b->ects);
+    if($aEcts > $bEcts){
+      return -1;
+    }else if($aEcts < $bEcts){
+      return 1;
+    }else{
+      return 0;
+    }
+  }
+
   public static function courses($filename, $filter, $spring, $autumn)
   {
     $handle = fopen($filename, 'r');
@@ -36,8 +48,11 @@ class CourseActions
     if ($autumn) {
       $filtered = array_filter($filtered, 'self::filterAutumn');
     }
+    uasort($filtered, 'self::sortCourses');
     return $filtered;
   }
+
+
 
   public static function filterSmall($course)
   {
@@ -56,12 +71,12 @@ class CourseActions
 
   public static function checkCourseCode($code, &$array)
   {
-    if (preg_match("/I00/", $code)) {
+    if (preg_match("/I00/i", $code)) {
       return array_filter($array, 'self::filterSmall');
-    } else if (preg_match("/^[A-Z]{3}$/", $code)) {
+    } else if (preg_match("/^[A-Z]{3}$/i", $code)) {
       $filtered = array();
       foreach ($array as $course) {
-        if (preg_match("/" . $code . "[0-9]{4}/", $course->code)) {
+        if (preg_match("/" . $code . "[0-9]{4}/i", $course->code)) {
           array_push($filtered, $course);
         }
       }

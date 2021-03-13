@@ -6,7 +6,7 @@ const DATA_FILE = "data/courses.csv";
 const TEMPLATE_PATH = "templates";
 $t = new Template(TEMPLATE_PATH . "/index_tpl.php");
 
-$tableHead = ["code", "name", "points", "semester"];
+$tableHead = ["code", "name", "ECTS", "semester"];
 
 
 $form = file_get_contents("static/form.html");

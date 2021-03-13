@@ -40,9 +40,6 @@ class CourseActions
       $line = fgets($handle);
     }
     fclose($handle);
-    if ($filter === "") {
-      $filter = "ICD";
-    }
     $filtered = self::checkCourseCode($filter, $courses);
     if ($spring) {
       $filtered = array_filter($filtered, 'self::filterSpring');
@@ -94,6 +91,8 @@ class CourseActions
         }
       }
       return $filtered;
+    }else if(preg_match("/^$/", $code)){
+      return $array;
     }
   }
 }

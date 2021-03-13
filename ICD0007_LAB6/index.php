@@ -11,23 +11,32 @@ $tableHead = ["code", "name", "ECTS", "semester"];
 
 $form = file_get_contents("static/form.html");
 
-$courseCode = "ICD";
+$courseCode = "";
 $spring = false;
 $autumn = false;
 
-if
-($_POST && isset($_POST['code'])){
-  $courseCode = $_POST['code'];
-  $spring = isset($_POST['spring']);
-  $autumn = isset($_POST['autumn']);
-  // header( "Location: {$_SERVER['REQUEST_URI']}", true, 303 );
+if ($_POST && isset($_POST['code'])) {
+  session_start();
+  $_SESSION["courseCode"] = $_POST['code'];
+  $_SESSION["spring"] = isset($_POST['spring']);
+  $_SESSION["autumn"] = isset($_POST['autumn']);
+  header("Location: {$_SERVER['REQUEST_URI']}", true, 303);
 }
+
+session_start();
+$courseCode = $_SESSION["courseCode"];
+$spring = $_SESSION["spring"];
+$autumn = $_SESSION["autumn"];
 
 // Assign values
 $t->assign("title", "Courses");
 $t->assign("form", $form);
 $t->assignTable("table", CourseActions::courses(DATA_FILE, $courseCode, $spring, $autumn), $tableHead);
+if(!$_POST){
+  session_unset();
+}
 
 // Render content
 echo $t->render();
-?>
+
+

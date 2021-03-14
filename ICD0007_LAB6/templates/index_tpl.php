@@ -8,7 +8,7 @@
 
 <body>
   <h1>{TITLE}</h1>
-  <div>{FORM}</div>
+  <div id="form-div">{FORM}</div>
   <div id="display">{TABLE}</div>
 </body>
 

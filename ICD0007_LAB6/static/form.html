@@ -1,4 +1,4 @@
-<form id="courseform" style="display:flex; flex-direction:row" action="index.php" method="POST">
+<form id="courseform" style="display:flex; flex-direction:row; align-items: center;" action="index.php" method="POST">
   <div>
   <label for="code">Course Code(first 3 digits or I00): </label><br>
 	<input id="code" type="text" name="code" placeholder="I00 or ICA/ICD/etc." maxlength="3" required >
@@ -10,7 +10,9 @@
     <input type="checkbox" id="autumn" name="autumn">
     <label for="autumn">Autumn</label><br>
   </fieldset>
-  <input type="submit" value="Search" >
+  <div style="display:flex; flex-direction:row; align-items: center;">
+    <input type="submit" value="Search" >
+  </div>
 </form>
 <form method="POST">
   <input type="submit" value="Reset" >

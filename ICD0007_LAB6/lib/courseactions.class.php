@@ -2,20 +2,6 @@
 require_once("course.class.php");
 class CourseActions
 {
-  public static function getContentFromLine($line)
-  {
-    $pipePos = strpos($line, ';');
-    $dataArr = array();
-    while ($pipePos !== false) {
-      $strtopush = substr($line, 0, $pipePos);
-      array_push($dataArr, $strtopush);
-      $line = substr($line, $pipePos + 1);
-      $pipePos = strpos($line, ';');
-    }
-    array_push($dataArr, $line);
-    return $dataArr;
-  }
-
   public static function sortCourses($a, $b)
   {
     $aEcts = intval($a->ects);

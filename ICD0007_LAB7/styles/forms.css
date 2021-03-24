@@ -1,0 +1,38 @@
+body {
+  background-color: #8892BF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formparent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  background-color: #4F5B93;
+  border: #000 10px solid;
+  padding: 15px;
+}
+
+#citizenform{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#formfields{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+#submit{
+  margin: 20px;
+}

@@ -11,9 +11,9 @@ body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #4F5B93;
   margin: 20px;
   padding: 10px;
+  background-color: #4F5B93;
   border: #000 10px solid;
   border-radius: 5px;
 }

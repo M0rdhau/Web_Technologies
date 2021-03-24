@@ -1,0 +1,25 @@
+<div id="formparent">
+  <h1>Citizen Registration</h1>
+  <form id="citizenform" action="index.php" method="POST">
+    <div id="formfields">
+      <div>
+        <label for="name">Name: </label><br>
+        <input id="name" type="text" name="name" placeholder="Full Name" required>
+      </div>
+      <div>
+        <label for="age">Age: </label><br>
+        <input id="age" type="number" name="age" placeholder="Age" required>
+      </div>
+      <div>
+        <label for="location">Location: </label><br>
+        <input id="location" type="text" name="location" 
+        placeholder="Tallinn, Tartu, Antarctica, Mars, etc." required>
+      </div>
+      <!-- <div style="display:flex; flex-direction:row; align-items: center;">-->
+    </div>
+    <input id="submit" type="submit" value="Sign Up">
+  </form>
+  <form method="POST">
+    <input id="login" type="submit" value="Log In">
+  </form>
+</div>

@@ -1,5 +1,6 @@
 <?php
 require_once('./scripts/cookiehandler.php');
+require_once('./scripts/reghandler.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +12,7 @@ require_once('./scripts/cookiehandler.php');
 
 <body>
   <?php
-  echo "Name: " . $_COOKIE['ctransient'] . "<br>";
-  echo "Short time count: " . $shortTimeCookie . "<br>";
-  echo "Long time count: " . $longTimeCookie . "<br>";
-  require_once('./static/loginform.html');
+  require_once('./static/regform.html');
   ?>
 </body>
 

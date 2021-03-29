@@ -1,5 +1,4 @@
 <?php
-require_once('./scripts/cookiehandler.php');
 require_once('./scripts/reghandler.php');
 ?>
 <!DOCTYPE html>

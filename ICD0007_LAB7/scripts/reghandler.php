@@ -1,6 +1,8 @@
 <?php
 
-const FILE_NAME = '/home/kvartzweiss/Documents/2_Semester/Web_Tech/Labs/ICD0007_LAB7/data/registrar.csv';
+const FILE_NAME = './data/registrar.csv';
+
+session_start();
 
 function simplecheck($str, $pat)
 {
@@ -41,8 +43,11 @@ function generatePin()
 function writeRegistered($name, $age, $location){
   $pin = generatePin();
   $regString =  $pin . "|" . $name . "|" . $age . "|" . $location . "\n";
-  echo "<h1>Your pin is: {$pin}</h1>";
-  echo file_put_contents(FILE_NAME, $regString, FILE_APPEND);
+  if(file_put_contents(FILE_NAME, $regString, FILE_APPEND)){
+    return $pin;
+  }else{
+    return false;
+  }
 }
 
 $unicodePattern = "/^[^@ \t\r\n0-9]+$/";
@@ -56,7 +61,22 @@ if ($_POST && isset(
   $name = simplecheck($_POST['name'], $unicodePattern);
   $age = simplecheck($_POST['age'], $agePattern);
   $location = simplecheck($_POST['location'], $unicodePattern);
-  echo "something happened";
-  writeRegistered($name, $age, $location);
+  $pin = false;
+  if($name && $age && $location){
+    $pin = writeRegistered($name, $age, $location);
+  }
+  if($pin){
+    $_SESSION["pin"] = $pin;
+    header("Location: ./index.php", true, 303);
+  }else{
+    $_SESSION["error"] = true;
+    header("Location: {$_SERVER['REQUEST_URI']}", true, 303);
+  }
 }
 
+if(!$_POST && $_SESSION){
+  if(isset($_SESSION['error'])){
+    echo "<h1>User creation unsuccessful</h1>";
+  }
+  session_unset();
+}

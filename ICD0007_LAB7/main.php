@@ -24,6 +24,7 @@ require_once('./scripts/cookiehandler.php');
           if(isset($_GET['reset'])){
             $_SESSION['requestcount'] = 0;
           }else if(isset($_GET['logout'])){
+            session_destroy();
             session_unset();
             header("Location: ./index.php", true, 303);
           }

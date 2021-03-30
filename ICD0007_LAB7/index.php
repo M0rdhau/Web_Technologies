@@ -12,6 +12,13 @@
 
 <body>
   <?php
+  if ($_SESSION && isset(
+    $_SESSION['name'],
+    $_SESSION['age'],
+    $_SESSION['location']
+  )){
+    header("Location: ./main.php", true, 303);
+  }
   require_once('./static/loginform.html');
   ?>
 </body>

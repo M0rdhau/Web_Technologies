@@ -31,7 +31,7 @@ require_once('./scripts/cookiehandler.php');
           $_SESSION['requestcount'] = (!$_SESSION['requestcount']) ? 1 : intval($_SESSION['requestcount']) + 1;
           echo "Name: " . urldecode($_SESSION['name']) . "<br>";
           echo "Age: " . urldecode($_SESSION['age']) . " <br>";
-          echo "Age: " . urldecode($_SESSION['location']) .  "<br>";
+          echo "Location: " . urldecode($_SESSION['location']) .  "<br>";
           echo "Request count: " . $_SESSION['requestcount'] . "<br>";
         }else{
           echo "No valid user session found, please <a href='./index.php'>Log in</a>";

@@ -50,7 +50,7 @@ function writeRegistered($name, $age, $location){
   }
 }
 
-$unicodePattern = "/^[^@ \t\r\n0-9]+$/";
+$unicodePattern = "/^[^@\t\r\n0-9]+$/";
 $agePattern = "/^1?[0-9]{0,2}$/";
 
 if ($_POST && isset(

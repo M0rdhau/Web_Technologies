@@ -37,6 +37,7 @@ if($_POST && isset($_POST['pin'])){
       $_SESSION['name'] = $data[$pin]->name;
       $_SESSION['age'] = $data[$pin]->age;
       $_SESSION['location'] = $data[$pin]->location;
+      header("Location: ./main.php", true, 303);
     }else{
       echo "<h1>No matching pins in the database, please register!</h1>";
     }

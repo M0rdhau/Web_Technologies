@@ -26,6 +26,7 @@ require_once('./scripts/cookiehandler.php');
           }else if(isset($_GET['logout'])){
             session_destroy();
             session_unset();
+            setcookie("ctransient", "", 1);
             header("Location: ./index.php", true, 303);
           }
           $_SESSION['requestcount'] = (!$_SESSION['requestcount']) ? 1 : intval($_SESSION['requestcount']) + 1;

@@ -22,6 +22,7 @@ require_once('./scripts/cookiehandler.php');
           $_SESSION['location'],
           $_GET['cookies']
         )) {
+          $_SESSION['requestcount'] = (!$_SESSION['requestcount']) ? 1 : intval($_SESSION['requestcount']) + 1;
           echo "Name: " . $_COOKIE['ctransient'] . "<br>";
           echo "Short time count: " . $shortTimeCookie . "<br>";
           echo "Long time count: " . $longTimeCookie . "<br>";

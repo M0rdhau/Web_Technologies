@@ -1,8 +1,8 @@
 <?php
 if($_SESSION && isset($_SESSION['name'])){
   $myName = $_SESSION['name'];
+  setCookie('ctransient', $myName);
 }
-setCookie('ctransient', $myName);
 $shortTimeCookie = 1;
 $longTimeCookie = 1;
 if (isset($_COOKIE['ShortTimeCount'])) {

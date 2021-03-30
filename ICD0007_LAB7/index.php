@@ -1,6 +1,5 @@
 <?php
   require_once('./scripts/loginhandler.php');
-  require_once('./scripts/cookiehandler.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

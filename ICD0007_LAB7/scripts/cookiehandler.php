@@ -1,5 +1,7 @@
 <?php
-$myName = "Dachi Mshvidobadze";
+if($_SESSION && isset($_SESSION['name'])){
+  $myName = $_SESSION['name'];
+}
 setCookie('ctransient', $myName);
 $shortTimeCookie = 1;
 $longTimeCookie = 1;

@@ -50,7 +50,7 @@ require_once('./scripts/cookiehandler.php');
           <input id="logout" name="logout" type="submit" value="Log Out">
         </form>
         <form id="cookies" action="cookieinfo.php" method="GET">
-          <input id="cookies" name="cookies" type="submit" value="Show Cookies">
+          <input type="submit" value="Show Cookies">
         </form>
       </div>
     </div>

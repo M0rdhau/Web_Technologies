@@ -19,8 +19,7 @@ require_once('./scripts/cookiehandler.php');
         if ($_SESSION && isset(
           $_SESSION['name'],
           $_SESSION['age'],
-          $_SESSION['location'],
-          $_GET['cookies']
+          $_SESSION['location']
         )) {
           $_SESSION['requestcount'] = (!$_SESSION['requestcount']) ? 1 : intval($_SESSION['requestcount']) + 1;
           echo "Name: " . urldecode($_COOKIE['ctransient']) . "<br>";

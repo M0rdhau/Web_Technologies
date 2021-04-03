@@ -40,16 +40,21 @@ SELECT ects_credits FROM courses_201818 WHERE course_code = 'ICD0007';
 
 SELECT course_code, course_name, ects_credits FROM courses_201818 WHERE ects_credits >= 5;
 
-SELECT S.student_name, S.student_code, C.course_code, C.ects_credits
+SELECT S.student_name, S.student_code, C.course_code, C.ects_credits, C.course_name
 FROM declarations_201818 S INNER JOIN courses_201818 C ON S.courses_ID=C.ID
 ORDER BY C.ects_credits DESC,
 S.student_name ASC;
 
-SELECT S.student_name, S.student_code, SUM(C.ects_credits) as total_credits
-FROM declarations_201818 S INNER JOIN courses_201818 C ON S.courses_ID=C.ID
-GROUP BY S.student_name, S.student_code
-ORDER BY total_credits DESC,
+SELECT S.student_name, S.student_code, N.semester_name, SUM(C.ects_credits) as semester_credits
+FROM declarations_201818 S 
+INNER JOIN courses_201818 C
+ON S.courses_ID=C.ID
+LEFT JOIN semesters_201818 N
+ON N.ID=C.Semesters_ID
+GROUP BY S.student_name, S.student_code, C.Semesters_ID, N.semester_name
+ORDER BY semester_credits DESC,
 S.student_name ASC;
+
 
 SELECT COUNT(*) as courses_in_autumn
 FROM courses_201818

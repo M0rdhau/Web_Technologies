@@ -31,7 +31,7 @@ function listCourses($semester = "", $keyword = "", $sort=0, $ascending=true)
       FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
       ORDER BY {$sortKeyWords[$sort]} {$ascDesc}");
     } else{
-      $keyword = $pdo->quote("%" . sanitizeInput($keyword) . "%");
+      $keyword = $pdo->quote("%" . $keyword . "%");
       $query = $pdo->prepare(
         "SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
         FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID

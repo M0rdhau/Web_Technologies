@@ -34,7 +34,7 @@ class Template
           if ($head > 0) {
             $table .= "<thead><tr>";
             foreach ($replaceWithHeader as $h) {
-              $table .= "<th><a href='{$_SERVER["PHP_SELF"]}?{$h}'>{$h}</a></th>";
+              $table .= "<th><a href='{$_SERVER["PHP_SELF"]}?{$h}=1'>{$h}</a></th>";
             }
             $table .= "</tr></thead>";
           }

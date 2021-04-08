@@ -10,8 +10,10 @@ function sanitizeInput($input){
   return $input;
 }
 
-function listCourses($semester = "", $keyword = "")
+function listCourses($semester = "", $keyword = "", $sort=0, $ascending=false)
 {
+  $sortKeyWords = [ "course_code", "course_name", "ects_credits", "semester_name" ];
+  $ascDesc = ($ascending) ? "ASC" : "DESC";
   try {
     $courses = array();
     $pdo = new PDO('mysql:host=' . SERVER_ADDRESS . ';dbname=' . DATABASE_NAME, USER_NAME, USER_PASSORD);
@@ -20,7 +22,7 @@ function listCourses($semester = "", $keyword = "")
     if ($semester === "" && $keyword === "") {
       $query = $pdo->prepare("SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
       FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
-      ORDER BY C.ects_credits DESC");
+      ORDER BY {$sortKeyWords[$sort]} {$ascDesc}");
     } else if (
       $semester === "1" ||
       $semester === "2" ||
@@ -30,16 +32,28 @@ function listCourses($semester = "", $keyword = "")
         "SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
         FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
         WHERE C.Semesters_ID = {$semester}
-        ORDER BY C.ects_credits DESC"
+        ORDER BY {$sortKeyWords[$sort]} {$ascDesc}"
       );
     }else{
       $keyword = $pdo->quote("%" . sanitizeInput($keyword) . "%");
       $query = $pdo->prepare(
         "SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
         FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
-        WHERE C.course_code LIKE {$keyword} OR
-        C.course_name LIKE {$keyword}
-        ORDER BY C.ects_credits DESC"
+        WHERE C.course_code LIKE {$keyword} 
+        -- ORDER BY {$sortKeyWords[$sort]} {$ascDesc}
+
+        UNION
+
+        SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
+        FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
+        WHERE C.course_name LIKE {$keyword}
+        AND NOT EXISTS(
+          SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
+          FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
+          WHERE C.course_code LIKE {$keyword}
+        )
+        ORDER BY {$sortKeyWords[$sort]} {$ascDesc}
+        "
       );
     }
     $query->execute();

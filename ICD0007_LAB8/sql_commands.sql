@@ -62,3 +62,16 @@ FROM courses_201818
 WHERE Semesters_ID = 1;
 
 DROP TABLE test_201818;
+
+
+SELECT SQL_CALC_FOUND_ROWS C.course_code, C.course_name, C.ects_credits, N.semester_name
+FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
+WHERE C.course_code LIKE '%Prog%'
+
+UNION
+
+SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
+FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
+WHERE C.course_name LIKE '%Prog%'
+AND FOUND_ROWS( ) = 0
+ORDER BY course_name;

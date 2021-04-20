@@ -21,7 +21,7 @@ function listCourses($semester = "", $keyword = "", $sort=0, $ascending=true)
   $sortKeyWords = [ "course_code", "course_name", "ects_credits", "semester_name" ];
   $ascDesc = ($ascending) ? "ASC" : "DESC";
   $semester = sanitizeSemester($semester);
-  $semesterQuery = ($semester === "") ? "" : "AND C.Semesters_ID = {$semester}";
+  $semesterQuery = ($semester === "") ? "" : "AND C.Semesters_ID = :semester";
   try {
     $courses = array();
     $pdo = new PDO('mysql:host=' . SERVER_ADDRESS . ';dbname=' . DATABASE_NAME, USER_NAME, USER_PASSORD);
@@ -31,25 +31,18 @@ function listCourses($semester = "", $keyword = "", $sort=0, $ascending=true)
       FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
       ORDER BY {$sortKeyWords[$sort]} {$ascDesc}");
     } else{
-      $keyword = $pdo->quote("%" . $keyword . "%");
+      $keyword = "%" . $keyword . "%";
       $query = $pdo->prepare(
         "SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
         FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
-        WHERE C.course_code LIKE {$keyword} {$semesterQuery}
-
-        UNION
-
-        SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
-        FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
-        WHERE C.course_name LIKE {$keyword} {$semesterQuery}
-        AND NOT EXISTS(
-          SELECT C.course_code, C.course_name, C.ects_credits, N.semester_name
-          FROM courses_201818 C INNER JOIN semesters_201818 N ON N.ID=C.Semesters_ID
-          WHERE C.course_code LIKE {$keyword} {$semesterQuery}
-        )
-        ORDER BY {$sortKeyWords[$sort]} {$ascDesc}
-        "
+        WHERE C.course_code LIKE :keyword {$semesterQuery}
+        OR C.course_name LIKE :keyword {$semesterQuery}
+        ORDER BY {$sortKeyWords[$sort]} {$ascDesc}"
       );
+      $query->bindValue(':keyword', $keyword, PDO::PARAM_STR);
+      if($semester !== ""){
+        $query->bindValue(':semester', $semester, PDO::PARAM_INT);
+      }
     }
     $query->execute();
     $query->setFetchMode(PDO::FETCH_ASSOC);

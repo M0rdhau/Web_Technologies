@@ -33,7 +33,8 @@ window.addEventListener("load", () => {
         newRow.addEventListener("click", (event) => {
           event.preventDefault();
           const itemName = event.target.innerHTML;
-          const items = JSON.parse(window.localStorage.getItem("items"));
+          if(confirm("Are you sure you want to delete " + itemName + "?")){
+            const items = JSON.parse(window.localStorage.getItem("items"));
           const newItems = items
             .map(e => (e.userName.trim() === userNameGlobal.trim()) 
             ?
@@ -48,6 +49,7 @@ window.addEventListener("load", () => {
           console.log(newItems);
           window.localStorage.setItem("items", JSON.stringify(newItems));
           updateItems();
+          }
         });
 
         tableRows.push(newRow);

@@ -11,11 +11,11 @@ window.addEventListener("load", () => {
 
   const itemsList = document.getElementById("shopping_list");
 
-  var userNameGlobal = window.sessionStorage.getItem("userName");
+  let userNameGlobal = window.sessionStorage.getItem("userName");
+  let tableRows = [];
 
   const updateItems = () => {
     const items = JSON.parse(window.localStorage.getItem("items"));
-    const userName = window.sessionStorage.getItem("userName");
     while(itemsList.rows.length > 1){
       itemsList.deleteRow(-1);
     }
@@ -30,6 +30,27 @@ window.addEventListener("load", () => {
         cellID.innerHTML = (i + 1) + ".";
         cellName.innerHTML = userItems[i].productName;
         cellQty.innerHTML = userItems[i].productQty;
+        newRow.addEventListener("click", (event) => {
+          event.preventDefault();
+          const itemName = event.target.innerHTML;
+          const items = JSON.parse(window.localStorage.getItem("items"));
+          const newItems = items
+            .map(e => (e.userName.trim() === userNameGlobal.trim()) 
+            ?
+            {
+              userName: e.userName,
+              items: e.items.filter(each => each.productName.trim() !== itemName.trim())
+            }
+            :
+            e
+            );
+          console.log(items);
+          console.log(newItems);
+          window.localStorage.setItem("items", JSON.stringify(newItems));
+          updateItems();
+        });
+
+        tableRows.push(newRow);
       }
     }
   }
@@ -77,7 +98,7 @@ window.addEventListener("load", () => {
     productName = itemName.value.trim();
     productQty = itemQty.value;
     itemName.value = "";
-    itemQty.value = 0;
+    itemQty.value = "";
     let items = JSON.parse(window.localStorage.getItem("items"));
     const userName = window.sessionStorage.getItem("userName");
     if(items === null){
@@ -105,10 +126,7 @@ window.addEventListener("load", () => {
     }else {
       const userEntry = items.find(e => e.userName === userName);
       const itemEntry = userEntry.items.find(e => e.productName === productName);
-      console.log(itemEntry);
       if(itemEntry === null || itemEntry === undefined){
-        console.log("pushing into userEntry");
-        console.log(userEntry);
         userEntry.items.push({
             productName: productName.trim(),
             productQty: productQty
@@ -117,7 +135,6 @@ window.addEventListener("load", () => {
         itemEntry.productQty =  parseInt(productQty) + parseInt(itemEntry.productQty);
       }
     }
-    console.log(items);
     window.localStorage.setItem("items", JSON.stringify(items));
     updateItems();
   });

@@ -1,7 +1,7 @@
 <form id="courseform" style="display:flex; flex-direction:row; align-items: center;" action="index.php" method="POST">
   <div>
   <label for="code">Course Code(first 3 digits or I00): </label><br>
-	<input id="code" type="text" name="code" placeholder="I00 or ICA/ICD/etc." maxlength="3" >
+	<input id="code" type="text" name="code" placeholder="I00 or ICA/ICD/etc.">
   </div>
   <fieldset>
     <legend>Choose semester</legend>

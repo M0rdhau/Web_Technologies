@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Look mom no PHP</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <div id="user_login" class="container">
+    <h1>User login</h1>
+    <div id="form-div">
+      <form id="userform">
+        <div>
+          <label for="username">Name:</label><br>
+          <input id="username" type="text" name="username">
+        </div>
+        <div>
+          <button id="login">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="shopping" class="container">
+    <h1 id="shopping_header">Shopping list</h1>
+    <div id="form-div">
+      <form id="itemsform">
+        <div class="formfields">
+          <div>
+            <label for="product">Product:</label><br>
+            <input id="product" type="text" name="product">
+          </div>
+          <div>
+            <label for="qty">Quantity:</label><br>
+            <input id="qty" type="number" name="qty">
+          </div>
+        </div>
+        <div>
+          <button id="item_btn">Add</button>
+          <button id="reset_btn">Reset</button>
+        </div>
+        <button id="logout">Log out</button>
+      </form>
+    </div>
+    <div class="display">
+      <table id="shopping_list" >
+        <th>ID</th>
+        <th>Item Name</th>
+        <th>Quantity</th>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

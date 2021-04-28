@@ -68,15 +68,20 @@ window.addEventListener("load", () => {
   loginButton.addEventListener("click", (event) => {
     event.preventDefault();
     const nameField = document.getElementById("username");
-    const userName = nameField.value;
-    userNameGlobal = userName;
-    nameField.value = "";
-    document.cookie = "userName=" + userName;
-    window.sessionStorage.setItem("userName", userName);
-    loginDiv.classList.add("hidden");
-    shoppingDiv.classList.remove("hidden");
-    document.getElementById("shopping_header").innerHTML = userName + "'s Shopping List";
-    updateItems();
+    const userName = nameField.value.trim();
+    if(userName === ""){
+      alert("Invalid username!");
+      nameField.value = "";
+    }else{
+      userNameGlobal = userName;
+      nameField.value = "";
+      document.cookie = "userName=" + userName;
+      window.sessionStorage.setItem("userName", userName);
+      loginDiv.classList.add("hidden");
+      shoppingDiv.classList.remove("hidden");
+      document.getElementById("shopping_header").innerHTML = userName + "'s Shopping List";
+      updateItems();
+    }
   });
 
   logoutButton.addEventListener("click", () => {
@@ -98,14 +103,29 @@ window.addEventListener("load", () => {
     const itemName = document.getElementById("product");
     const itemQty = document.getElementById("qty");
     productName = itemName.value.trim();
-    productQty = itemQty.value;
-    itemName.value = "";
-    itemQty.value = "";
-    let items = JSON.parse(window.localStorage.getItem("items"));
-    const userName = window.sessionStorage.getItem("userName");
-    if(items === null){
-      items = [
-        {
+    if(productName === ""){
+      alert("Invalid Item name!");
+      itemName.value = "";
+    }else{
+      productQty = itemQty.value;
+      itemName.value = "";
+      itemQty.value = "";
+      let items = JSON.parse(window.localStorage.getItem("items"));
+      const userName = window.sessionStorage.getItem("userName");
+      if(items === null){
+        items = [
+          {
+            userName: userName,
+            items: [
+              {
+                productName: productName.trim(),
+                productQty: productQty
+              }
+            ]
+          }
+        ];
+      }else if(items.find(e => e.userName === userName) === null || items.find(e => e.userName === userName) === undefined){
+        items.push({
           userName: userName,
           items: [
             {
@@ -113,31 +133,21 @@ window.addEventListener("load", () => {
               productQty: productQty
             }
           ]
-        }
-      ];
-    }else if(items.find(e => e.userName === userName) === null || items.find(e => e.userName === userName) === undefined){
-      items.push({
-        userName: userName,
-        items: [
-          {
-            productName: productName.trim(),
-            productQty: productQty
-          }
-        ]
-      });
-    }else {
-      const userEntry = items.find(e => e.userName === userName);
-      const itemEntry = userEntry.items.find(e => e.productName === productName);
-      if(itemEntry === null || itemEntry === undefined){
-        userEntry.items.push({
-            productName: productName.trim(),
-            productQty: productQty
         });
-      }else{
-        itemEntry.productQty =  parseInt(productQty) + parseInt(itemEntry.productQty);
+      }else {
+        const userEntry = items.find(e => e.userName === userName);
+        const itemEntry = userEntry.items.find(e => e.productName === productName);
+        if(itemEntry === null || itemEntry === undefined){
+          userEntry.items.push({
+              productName: productName.trim(),
+              productQty: productQty
+          });
+        }else{
+          itemEntry.productQty =  parseInt(productQty) + parseInt(itemEntry.productQty);
+        }
       }
+      window.localStorage.setItem("items", JSON.stringify(items));
+      updateItems();
     }
-    window.localStorage.setItem("items", JSON.stringify(items));
-    updateItems();
   });
 });

@@ -47,7 +47,7 @@ a {
   color: white;
 }
 
-#form-div{
+.form-div{
   display: flex;
   flex-direction: row;
   justify-content: center;
